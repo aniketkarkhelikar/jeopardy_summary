@@ -1,0 +1,30 @@
+''' test_initial.csv
+Of course. This is the final and most important step: analyzing the results to understand the system's performance and determine the path forward.
+
+I have performed a detailed analysis of the results.json file and calculated the key retrieval metrics you requested.
+
+1. JSON Analysis & Ground Truth Definition
+
+First, I established the "ground truth"—the single correct source document that should be returned for each query. This is based on the original_question in our source files.
+Query ID	Ground Truth Document
+1, 2, 3	000040-4680...drseussatthemultiplex_1200.json
+4, 5, 6	000560-3036...atthekennedycenter_500.json
+7, 8, 9	000575-3036...highschool_400.json
+10, 11, 12	073678-3093...authorsoddjobs_600.json
+13, 14, 15	000405-2825...poets_600.json
+16, 17, 18	000552-3036...celebstuff_300.json (Note: includes the duplicate file)
+19, 20, 21	000566-3036...theobligatorypoetrycategory_200.json (Poet/Rocker)
+
+'''
+test_questions.csv
+Query ID(s) | Ground Truth Document
+------------|----------------------
+1, 2, 3     | 149213-56_doublejeopardy_grammar_400.json
+4, 5, 6     | 149223-56_doublejeopardy_usgeography_800.json
+7, 8, 9     | 149235-779_jeopardy_palindromes_100.json
+10, 11, 12  | 149247-779_jeopardy_palindromes_300.json
+13, 14, 15  | 149261-779_doublejeopardy_artists_200.json
+16, 17, 18  | 000417-2825_doublejeopardy_poets_1000.json
+19, 20, 21  | 000546-3036_jeopardy_celebstuff_1500.json
+22, 23, 24  | 000554-3036_jeopardy_atthekennedycenter_400.json
+25, 26, 27  | 000577-3036_doublejeopardy_collegemascots_400.json
